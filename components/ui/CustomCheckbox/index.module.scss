@@ -1,0 +1,43 @@
+@import "styles/index";
+
+.root {
+  cursor: pointer;
+
+  label {
+
+    span {
+      div {
+
+
+
+
+        border: 1px solid #cbcbcb;
+
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6c93ff !important;
+  background-color: #6c93ff;
+  border-radius: 2px;
+  cursor: pointer;
+
+  span {
+    color: #fff;
+  }
+}
+
+.checkboxLabel {
+  cursor: pointer;
+  margin-left: 8px;
+  text-align: left;
+  font-size: 12px;
+}

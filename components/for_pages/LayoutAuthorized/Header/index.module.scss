@@ -1,0 +1,61 @@
+@import "styles/index";
+
+.root {
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, .15), 0 0 0 1px rgba(0, 0, 0, .015);
+}
+
+.container {
+    @include container;
+    padding-top: 0px;
+}
+
+.row {
+    @include row;
+    flex-wrap: nowrap;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .link {
+        font-size: 16px;
+        font-weight: 500;
+        color: #887aff;
+        line-height: 26px;
+        padding: 0 6px;
+        border-radius: 6px;
+        &:hover{
+            color: #7091ff;
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    font-size: 16px;
+    text-align: right;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: #444;
+    padding-right: 15px;
+
+    .info {
+        display: flex;
+        white-space: nowrap;
+
+        .id {
+            &:hover {
+                color: #7091ff;
+            }
+        }
+    }
+}

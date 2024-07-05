@@ -1,0 +1,24 @@
+@import "styles/index";
+
+.header {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .title {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        max-width: 380px;
+        padding: 0;
+    }
+
+    @include mq(560, max) {
+        flex-direction: column;
+    }
+}

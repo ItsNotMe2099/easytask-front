@@ -1,0 +1,64 @@
+@import "styles/index";
+
+.root {
+    background: hsla(0, 0%, 70.6%, .0901960784);
+}
+
+.container {
+    @include container;
+}
+
+.row {
+    @include row;
+    gap: 10px;
+    @include mq($PhoneWidth, max) {
+        flex-direction: column
+    }
+}
+
+.col {
+    @include col;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+.last {
+    @include col;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.contact {
+    .title {
+        margin-bottom: 10px;
+        color: #b7b7b7;
+    }
+
+    a {
+        color: #444;
+        line-height: 21.6px;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

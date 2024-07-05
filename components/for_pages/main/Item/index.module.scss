@@ -1,0 +1,95 @@
+@import "styles/index";
+
+.root {
+  padding: 10px;
+  align-items: center;
+  min-width: calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 18px 0 rgba(0, 0, 0, .04), 0 0 0 1px rgba(0, 0, 0, .015);
+  display: flex;
+  margin-bottom: 15px;
+
+  @include mq($TabletWidth, max) {
+    flex-direction: column;
+  }
+
+  &:hover {
+    background: #efefef;
+    box-shadow: 0 10px 36px 0 rgba(0, 0, 0, .08), 0 0 0 1px rgba(0, 0, 0, .03);
+    cursor: pointer;
+  }
+}
+
+.icon {
+  width: 50px;
+  top: 5px;
+  left: -5px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
+  }
+
+  img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.content {
+  flex: 1 1;
+  padding: 5px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  svg {
+    fill: #000;
+    font-size: .72em;
+    margin-left: 8px;
+    margin-top: -3px;
+    width: 0.875em;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+}
+
+.actions {
+  border-radius: 6px;
+  padding: 5px 12px;
+  color: #fff;
+  background: linear-gradient(40deg, #887aff 20%, #7892ff);
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  span {
+    flex: 1 1;
+    white-space: nowrap;
+  }
+}

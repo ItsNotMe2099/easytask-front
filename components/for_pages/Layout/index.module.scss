@@ -1,0 +1,67 @@
+@import "styles/index";
+
+.root {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+    }
+}
+
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .title {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        max-width: 380px;
+        padding: 0;
+    }
+}
+
+.inner {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 18px 0 rgba(0, 0, 0, .04), 0 0 0 1px rgba(0, 0, 0, .015);
+
+    a {
+        color: #7091ff;
+        cursor: pointer;
+    }
+}
+
+.bottom {
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+    display: block;
+    line-height: 22px;
+}

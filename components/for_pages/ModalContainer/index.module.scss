@@ -1,0 +1,23 @@
+@import "styles/index";
+
+.modal {
+  outline: none;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(26, 37, 54, .8);
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 100%;
+}

@@ -1,0 +1,53 @@
+@import "styles/index";
+
+.inner {
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.tabs {
+    display: flex;
+    background-color: $third-color;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 11px 32px;
+    font-size: 10.5px;
+    background-color: #E9E9ED;
+
+    span {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.row {
+    margin-top: 20px;
+    @include row;
+}
+
+.col {
+    flex: 0 0 100% !important;
+    max-width: 100%;
+    @include col;
+}
+
+.login {
+    margin-bottom: 20px;
+}

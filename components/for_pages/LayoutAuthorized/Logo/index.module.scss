@@ -1,0 +1,13 @@
+@import "styles/index";
+
+.logo {
+    text-align: center;
+    @include col;
+
+    span {
+        font-size: 30px;
+    }
+
+    font-size: 20px;
+    color: #5895FF;
+}

@@ -1,0 +1,95 @@
+@import "styles/index";
+
+.prelend {
+  .title {
+    padding-top: 10px;
+    color: #6c93ff;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .list {
+    color: #1a2536;
+  }
+
+  .contentRow {
+    background-color: #6c93ff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    margin: 10px 0 0;
+    border-radius: 2px;
+
+    .top {
+      text-align: center;
+    }
+
+    .priceNew {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        top: 45%;
+        left: -2.5px;
+        transform: rotate(1turn);
+        width: 62px;
+        background: #000;
+      }
+
+      strong,
+      small {
+        color: #fff;
+        font-size: 18px;
+      }
+
+      span {
+        background-color: #fff;
+        color: #000;
+        padding: 2px;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+    }
+
+  }
+}
+
+.police {
+  padding: 0 27px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8d8d8d;
+  margin-bottom: 27px;
+
+  a {
+    color: #455f88;
+  }
+}
+
+.item {
+  padding-bottom: 5px;
+  line-height: 21px;
+
+  svg {
+    font-size: 15px;
+    color: #6c93ff;
+    margin-right: 3px;
+    width: 1em;
+    display: inline-block;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+}
+
+.btn {
+  margin-top: 15px;
+}

@@ -1,0 +1,59 @@
+@import "styles/index";
+
+.root {
+    display: none;
+    bottom: 0;
+    background: #333;
+    width: 100%;
+    z-index: 20;
+    top: auto!important;
+
+    @include mq(640px, max) {
+        display: block;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.link {
+    justify-content: center;
+    align-items: center;
+    padding: 11px 10px 9px;
+    flex-direction: column;
+    color: #a4a4a4;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    flex: 1 1;
+    height: 100%;
+    color: #a4a4a4;
+
+    svg {
+        fill: #a4a4a4;
+    }
+}
+
+.active{
+    color: $secondary-color;
+    svg{
+        fill: $secondary-color;
+    }
+}
+
+.icon {
+    flex: 1 1;
+
+    svg {
+        width: 0.875em;
+        height: 24px;
+        max-width: 24px;
+    }
+}
+
+.text{
+    font-size: 10px;
+    white-space: nowrap;
+}

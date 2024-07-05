@@ -1,0 +1,54 @@
+@import "html";
+
+@mixin mq($width, $type: min) {
+  @if $type == max {
+  	$width: $width - 1px;
+  }
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+
+@mixin container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 1237px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq($MdDesktopWidth, max){
+    max-width: 960px;
+  }
+  @include mq($SmDesktopWidth, max){
+    max-width: 720px;
+  }
+  @include mq($TabletWidth, max){
+    max-width: 540px;
+  }
+  @include mq($PhoneWidth, max){
+    max-width: 100%;
+  }
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@mixin col {
+  flex: 0 0 8.3333333333%;
+  //max-width: 8.3333333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include mq($TabletWidth, max){
+    flex: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+}
